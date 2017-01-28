@@ -1,0 +1,71 @@
+---
+title: 'DataProducts: Week2'
+author: "Nathan Day"
+date: "1/28/2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+## My New Slide
+Knit that shiz
+
+***
+A Slide without a title is formated with three asteriks
+
+## Titles are two pounds
+### A sub header is three
+#### A sub sub header is four
+
+## Lists require bullets
+- Element 1
+- Element 2
+
+Or we could used numbers directly
+
+1. Number One
+2. Number Two
+
+## Formatting Text
+
+Plain text no asteriks
+
+*italicized text with 1 asterik*
+
+**Bold text with 2 asteriks**
+
+Syntax: `for i in 1:10` use SO backticks
+
+## R code
+The same as mark down reports
+```{r, comment = "", echo=TRUE}
+head(mtcars)
+```
+## A plot slide
+Same shit
+```{r, fig.height=4, fig.width=4, fig.align='center', fig.cap = "fuck BC"}
+library(ggplot2)
+ggplot(mtcars, aes(mpg, hp, color = as.factor(cyl))) +
+    geom_point() +
+    stat_smooth()
+```
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
